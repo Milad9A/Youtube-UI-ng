@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:miniplayer/miniplayer.dart';
 import 'package:youtube_ng/screens/nav_screen.dart';
+import 'package:youtube_ng/widgets/video_info.dart';
 
 class VideoScreen extends StatelessWidget {
   const VideoScreen({Key? key}) : super(key: key);
@@ -46,6 +47,7 @@ class VideoScreen extends StatelessWidget {
                             Colors.red,
                           ),
                         ),
+                        VideoInfo(video: selectedVideo),
                       ],
                     ),
                   );
